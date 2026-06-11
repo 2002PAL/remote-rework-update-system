@@ -1,18 +1,15 @@
 # Remote Rework Update System|
-
 **--------------------------------------------------------------------**
 
 A wireless communication system built during an internship at **Nokia**, designed to enable real-time status updates from a reworker to multiple debugging engineers on the factory floor.
 
-\---
 
 ## Overview
-
+**--------------**
 
 
 In a PCB rework/debugging environment, a reworker needs to communicate their current work status to several engineers simultaneously. This project implements a one-to-many wireless notification system using Arduino Uno R3 boards and NRF24L01 RF modules. The transmitter (reworker's side) broadcasts status codes; up to four receivers (engineers' stations) decode and display the corresponding status via colored LEDs and a buzzer.
 
-\---
 
 ## Features
 
@@ -32,7 +29,6 @@ In a PCB rework/debugging environment, a reworker needs to communicate their cur
 * Hardware logic (D flip-flops, JK flip-flops, 2-to-4 decoder, 1:4 DEMUX) on the transmitter side for signal conditioning and receiver selection
 * Custom 12V → 3.3V voltage regulator using LD33CV for NRF24L01 power supply
 
-\---
 
 ## 
 
@@ -67,7 +63,6 @@ In a PCB rework/debugging environment, a reworker needs to communicate their cur
 |Indicators|Blue, Red, Yellow, Green LEDs + Active Buzzer|
 |Misc|Breadboard, jumper wires, 10KΩ \& 330Ω resistors|
 
-\---
 
 
 
@@ -113,7 +108,6 @@ In a PCB rework/debugging environment, a reworker needs to communicate their cur
 |D6|Green LED|
 |D10|Active Buzzer|
 
-\---
 
 ## How It Works
 
@@ -128,7 +122,6 @@ In a PCB rework/debugging environment, a reworker needs to communicate their cur
    * If the step index is 0 (Green / completion), activates the buzzer for **5 seconds**
    * Advances to the next step index cyclically (0 → 1 → 2 → 3 → 0 …)
 
-\---
 
 ## Software Dependencies (Arduino Libraries)
 
@@ -169,7 +162,6 @@ Change `thisAddress` in each receiver sketch accordingly.
 
 **----------------------------------------------**
 
-```
 remote-rework-update-system/
 ├── transmitter.ino       # Arduino sketch for transmitter
 ├── receiver.ino          # Arduino sketch for receiver (change address per unit)
@@ -180,9 +172,7 @@ remote-rework-update-system/
 ├── Project_video.mp4
 ├── nrf_power_supply_ckt.png
 └── README.md
-```
 
-\---
 
 ## Getting Started
 
@@ -199,7 +189,6 @@ remote-rework-update-system/
 4. Wire the hardware as per the pin connection tables and circuit diagrams above.
 5. Power both units. Press S0 on the transmitter to select the target receiver, then S1 to send a status update.
 
-\---
 
 
 
