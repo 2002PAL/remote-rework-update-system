@@ -180,9 +180,7 @@ remote-rework-update-system/
 ├── images \& video
 │   ├── transmitter\_photo.png
 │   ├── receiver\_photo.png
-
 │   ├── ckt\_diagram.png
-
 │   └── Project\_video.mp4
 └── README.md
 ```
