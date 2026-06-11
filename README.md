@@ -171,17 +171,14 @@ Change `thisAddress` in each receiver sketch accordingly.
 
 ```
 remote-rework-update-system/
-├── transmitter
-│   └── transmitter.ino       # Arduino sketch for transmitter
-├── receiver
-│   └── receiver.ino          # Arduino sketch for receiver (change address per unit)
-├── Presentation
-│   └── PROJECT\_REPORT\_NOKIA.pdf
-├── images \& video
-│   ├── transmitter\_photo.png
-│   ├── receiver\_photo.png
-│   ├── ckt\_diagram.png
-│   └── Project\_video.mp4
+├── transmitter.ino       # Arduino sketch for transmitter
+├── receiver.ino          # Arduino sketch for receiver (change address per unit)
+├── PROJECT_REPORT_NOKIA.pdf
+├── transmitter_photo.png
+├── receiver_photo.png
+├── ckt_diagram.png
+├── Project_video.mp4
+├── nrf_power_supply_ckt.png
 └── README.md
 ```
 
